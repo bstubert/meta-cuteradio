@@ -12,6 +12,7 @@ IMAGE_INSTALL += "\
     qtdeclarative-qmlplugins \
     qtquickcontrols2 \
     qtmultimedia \
+    cuteradio \
 "
 
 # Add an extra 0.5 GB of free space to the root filesystem
