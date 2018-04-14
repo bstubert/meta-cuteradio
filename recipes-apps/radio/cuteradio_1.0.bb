@@ -10,7 +10,7 @@ LIC_FILES_CHKSUM="file://LICENSE;md5=1ef68d7e526c164e11da8965fdbed52c"
 inherit cmake_qt5
 
 SRC_URI = "git://github.com/bstubert/cuteradio.git;branch=master;protocol=https"
-SRCREV = "b001def4b119118ff58fc3489a8fef4bb2fbfc5e"
+SRCREV = "5521d9ca291534c63cc9ddee770780b80d30cdb4"
 
 PV = "1.0+git${SRCREV}"
 

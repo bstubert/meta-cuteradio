@@ -10,12 +10,7 @@ IMAGE_FEATURES += "splash ssh-server-dropbear debug-tweaks"
 
 PKG_FONTS = "\
     fontconfig \
-    fontconfig-utils \
     ttf-bitstream-vera \
-"
-
-PKG_GRAPHICS = "\
-    userland \
 "
 
 PKG_QT5 = "\
@@ -25,22 +20,12 @@ PKG_QT5 = "\
     qtdeclarative-qmlplugins \
     qtquickcontrols2 \
     qtmultimedia \
-"
-
-PKG_WIFI = "\
-    crda \
-    iw \
-    linux-firmware-bcm43430 \
-    wireless-tools \
-    wpa-supplicant \
+    qtmultimedia-qmlplugins \
 "
 
 IMAGE_INSTALL += "\
     ${PKG_FONTS} \
-    ${PKG_GRAPHICS} \
     ${PKG_QT5} \
-    ${PKG_WIFI} \
-    tzdata \
     cuteradio \
 "
 
