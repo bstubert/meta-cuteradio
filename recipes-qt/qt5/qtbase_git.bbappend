@@ -5,6 +5,3 @@ PACKAGECONFIG_GL = "gles2 eglfs"
 PACKAGECONFIG_FONTS += "fontconfig"
 
 DEPENDS += "userland"
-
-
-
