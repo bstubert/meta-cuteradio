@@ -8,12 +8,20 @@ DEPENDS += "bcm2835-bootfiles"
 
 IMAGE_FEATURES += "splash ssh-server-dropbear debug-tweaks"
 
-PKG_FONTS = "\
+PKG_FONTS = " \
     fontconfig \
     ttf-bitstream-vera \
 "
 
-PKG_QT5 = "\
+PKG_MULTIMEDIA = " \
+    alsa-utils \
+    gstreamer1.0-plugins-bad \
+    gstreamer1.0-plugins-base \
+    gstreamer1.0-plugins-good \
+    gstreamer1.0-plugins-ugly \
+"
+
+PKG_QT5 = " \
     qtbase \
     qtbase-plugins \
     qtdeclarative \
@@ -23,8 +31,9 @@ PKG_QT5 = "\
     qtmultimedia-qmlplugins \
 "
 
-IMAGE_INSTALL += "\
+IMAGE_INSTALL += " \
     ${PKG_FONTS} \
+    ${PKG_MULTIMEDIA} \
     ${PKG_QT5} \
     cuteradio \
 "
