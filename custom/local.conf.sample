@@ -8,8 +8,8 @@ PATCHRESOLVE = "noop"
 # Keep the downloads and sstate-cache outside the build directory.
 # Then, multiple build environments can use the same downloads and sstate-cache,
 # which speeds up builds significantly.
-DL_DIR ?= "${TOPDIR}/../../downloads"
-SSTATE_DIR ?= "${TOPDIR}/../../sstate-cache"
+DL_DIR ?= "${TOPDIR}/../downloads"
+SSTATE_DIR ?= "${TOPDIR}/../sstate-cache"
 
 # Do not build package features for x11 directfb. Saves time during build.
 DISTRO_FEATURES_remove = " x11 wayland vulkan directfb"
