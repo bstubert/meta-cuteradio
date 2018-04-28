@@ -1,6 +1,6 @@
 SUMMARY = "CuteRadio - Simple Internet radio for showing QML and Qt on embedded systems"
 AUTHOR = "Burkhard Stubert (burkhard.stubert@embeddeduse.com)"
-HOMEPAGE = "https://github.com/bstubert/cuteradio"
+HOMEPAGE = "https://github.com/bstubert/cuteradio-apps"
 
 SECTION = "app"
 
