@@ -6,14 +6,14 @@ BBPATH = "${TOPDIR}"
 BBFILES ?= ""
 
 BBLAYERS ?= " \
-  /public/Projects/CuteRadio/sources/poky/meta \
-  /public/Projects/CuteRadio/sources/poky/meta-poky \
-  /public/Projects/CuteRadio/sources/meta-openembedded/meta-oe \
-  /public/Projects/CuteRadio/sources/meta-openembedded/meta-multimedia \
-  /public/Projects/CuteRadio/sources/meta-openembedded/meta-networking \
-  /public/Projects/CuteRadio/sources/meta-openembedded/meta-python \
-  /public/Projects/CuteRadio/sources/meta-raspberrypi \
-  /public/Projects/CuteRadio/sources/meta-qt5 \
-  /public/Projects/CuteRadio/sources/meta-cuteradio \
+  /public/Projects/cuteradio/sources/poky/meta \
+  /public/Projects/cuteradio/sources/poky/meta-poky \
+  /public/Projects/cuteradio/sources/meta-openembedded/meta-oe \
+  /public/Projects/cuteradio/sources/meta-openembedded/meta-multimedia \
+  /public/Projects/cuteradio/sources/meta-openembedded/meta-networking \
+  /public/Projects/cuteradio/sources/meta-openembedded/meta-python \
+  /public/Projects/cuteradio/sources/meta-raspberrypi \
+  /public/Projects/cuteradio/sources/meta-qt5 \
+  /public/Projects/cuteradio/sources/meta-cuteradio \
 "
 
