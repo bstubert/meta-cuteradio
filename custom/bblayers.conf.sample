@@ -9,8 +9,6 @@ BBLAYERS ?= " \
   /public/Projects/cuteradio/sources/poky/meta \
   /public/Projects/cuteradio/sources/poky/meta-poky \
   /public/Projects/cuteradio/sources/meta-openembedded/meta-oe \
-  /public/Projects/cuteradio/sources/meta-openembedded/meta-multimedia \
-  /public/Projects/cuteradio/sources/meta-openembedded/meta-networking \
   /public/Projects/cuteradio/sources/meta-openembedded/meta-python \
   /public/Projects/cuteradio/sources/meta-raspberrypi \
   /public/Projects/cuteradio/sources/meta-qt5 \
