@@ -14,11 +14,11 @@ PARALLEL_MAKE ?= "-j ${@oe.utils.cpu_count()}"
 DL_DIR ?= "${TOPDIR}/../downloads"
 SSTATE_DIR ?= "${TOPDIR}/../sstate-cache"
 
-DISTRO_FEATURES_remove = " x11 wayland vulkan directfb"
+DISTRO_FEATURES_remove = " x11 wayland vulkan directfb webengine"
 
-DISTRO_FEATURES_append = " alsa opengl"
+DISTRO_FEATURES_append = " alsa gstreamer opengl"
 
 LICENSE_FLAGS_WHITELIST = "commercial"
 
-CONF_VERSION = "2"
+CONF_VERSION = "1"
 
