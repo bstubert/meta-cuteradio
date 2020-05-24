@@ -1,0 +1,34 @@
+#!/bin/sh
+
+. /etc/init.d/functions
+
+do_start() {
+	/usr/local/bin/cuteradio -platform eglfs &
+}
+
+do_stop() {
+	killproc cuteradio
+}
+
+case "$1" in
+  start)
+	echo "Starting cuteradio app"
+	do_start
+	;;
+  stop)
+	echo "Stopping cuteradio app"
+	do_stop
+	;;
+  restart|force-reload)
+	echo "Restarting cuteradio app"
+	do_stop
+	sleep 1
+	do_start
+	;;
+  *)
+	echo "Usage: $0 {start|stop|restart|force-reload}" >&2
+	exit 1
+	;;
+esac
+
+exit 0
