@@ -1,12 +1,15 @@
 DESCRIPTION = "core-image-base extended by Qt libaries and CuteRadio application"
 LICENSE = "MIT"
 
-#require recipes-core/images/core-image-base.bb
 inherit core-image
 
 DEPENDS += "bcm2835-bootfiles"
 
-IMAGE_FEATURES += "splash ssh-server-dropbear debug-tweaks"
+IMAGE_FEATURES += "\
+    splash \
+    ssh-server-dropbear \
+    debug-tweaks \
+"
 
 PKG_FONTS = " \
     fontconfig \
@@ -32,6 +35,7 @@ PKG_QT5 = " \
 "
 
 IMAGE_INSTALL += " \
+    packagegroup-cuteradio-devtools \
     ${PKG_FONTS} \
     ${PKG_MULTIMEDIA} \
     ${PKG_QT5} \
