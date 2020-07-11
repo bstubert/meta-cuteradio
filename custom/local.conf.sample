@@ -5,20 +5,18 @@ SDKMACHINE = "x86_64"
 USER_CLASSES = "image-mklibs image-prelink"
 PATCHRESOLVE = "noop"
 
-BB_NUMBER_THREADS ?= "${@oe.utils.cpu_count()}"
-PARALLEL_MAKE ?= "-j ${@oe.utils.cpu_count()}"
-
 # Keep the downloads and sstate-cache outside the build directory.
 # Then, multiple build environments can use the same downloads and sstate-cache,
 # which speeds up builds significantly.
 DL_DIR ?= "${TOPDIR}/../downloads"
 SSTATE_DIR ?= "${TOPDIR}/../sstate-cache"
 
+# Do not build package features for x11 directfb. Saves time during build.
 DISTRO_FEATURES_remove = " x11 wayland vulkan directfb"
 
 DISTRO_FEATURES_append = " alsa opengl"
 
 LICENSE_FLAGS_WHITELIST = "commercial"
 
-CONF_VERSION = "2"
+CONF_VERSION = "1"
 
