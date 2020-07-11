@@ -1,4 +1,4 @@
-DESCRIPTION = "core-image-base extended by Qt libaries and CuteRadio application"
+DESCRIPTION = "Fairly minimal image for internet radio app (cuteradio)"
 LICENSE = "MIT"
 
 inherit core-image
@@ -7,38 +7,12 @@ DEPENDS += "bcm2835-bootfiles"
 
 IMAGE_FEATURES += "\
     splash \
-    ssh-server-dropbear \
-    debug-tweaks \
-"
-
-PKG_FONTS = " \
-    fontconfig \
-    ttf-bitstream-vera \
-"
-
-PKG_MULTIMEDIA = " \
-    alsa-utils \
-    gstreamer1.0-plugins-bad \
-    gstreamer1.0-plugins-base \
-    gstreamer1.0-plugins-good \
-    gstreamer1.0-plugins-ugly \
-"
-
-PKG_QT5 = " \
-    qtbase \
-    qtbase-plugins \
-    qtdeclarative \
-    qtdeclarative-qmlplugins \
-    qtquickcontrols2 \
-    qtmultimedia \
-    qtmultimedia-qmlplugins \
 "
 
 IMAGE_INSTALL += " \
     packagegroup-cuteradio-devtools \
-    ${PKG_FONTS} \
-    ${PKG_MULTIMEDIA} \
-    ${PKG_QT5} \
+    packagegroup-qml-basic \
+    packagegroup-qml-multimedia \
     cuteradio \
 "
 
