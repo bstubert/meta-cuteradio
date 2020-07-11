@@ -7,6 +7,8 @@ DEPENDS += "bcm2835-bootfiles"
 
 IMAGE_FEATURES += "\
     splash \
+    ssh-server-dropbear \
+    debug-tweaks \
 "
 
 IMAGE_INSTALL += " \
